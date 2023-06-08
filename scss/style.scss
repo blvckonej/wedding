@@ -126,15 +126,114 @@
     grid-gap: 20px;
     color: #f0f6fa;
   }
+  &-clock {
+    p {
+      margin-top: 49px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+  &-timer {
+    max-width: 297px;
+    margin: 0 auto;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-timer_item {
+    min-width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &-timer_value {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  &-timer_border {
+    border-right: 1px solid white;
+    margin: 0 0 20px 0;
+  }
+  &-timer_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .arrow-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19px;
+  }
+  .arrow-down span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    margin: 10px;
+    animation: arrow-down 2s infinite;
+  }
+  .arrow-down span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  .arrow-down span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  @keyframes arrow-down {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
   .week {
     font-weight: 600;
   }
   .love {
-    background-image: url("../img/love.svg");
-    width: 30px;
-    height: 30px;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .imgLove {
+      z-index: -1;
+      position: absolute;
+      animation: imgLove 1s infinite ease-in-out;
+    }
+  }
+
+  @keyframes imgLove {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      transition-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.9);
+      transition-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.95);
+      transition-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.85);
+      transition-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      transition-timing-function: ease-out;
+    }
   }
 }
 
