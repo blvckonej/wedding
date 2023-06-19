@@ -30,14 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
         minutesVal.textContent = minutes;
         secondsVal.textContent = seconds;
 
+        if (minutes < 10) {
+            return minutesVal.textContent = '0' + minutes;
+        }
+        if (hourse < 10) {
+            return hourseVal.textContent = '0' + hourse;
+        }
+        if (days < 10) {
+            return daysVal.textContent = '0' + days;
+        }
         if (seconds < 10) {
             return secondsVal.textContent = '0' + seconds;
         }
 
-        daysText.textContent = declOfNum(days, ['день', 'дня', 'дней']);
+        daysText.textContent = declOfNum(days, ['день', 'дней', 'дня']);
         hourseText.textContent = declOfNum(hourse, ['час', 'часа', 'часов']);
         minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
-        secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
+        secondsText.textContent = declOfNum(seconds, ['секунд', 'секунда', 'секунды']);
     };
     timeCount();
     setInterval(timeCount, 1000);

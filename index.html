@@ -21,10 +21,10 @@
     <main class="main__block">
         <div class="container">
             <div class="main__block-name">
-                <h1 data-scrolly-down="blurInTop" class="main__block-title">
+                <h1 data-scrolly-down="leBlurInRight" class="main__block-title">
                     Андрей & София
                 </h1>
-                <p data-scrolly-down="blurInTop" class="main__block-date">
+                <p data-scrolly-down="leBlurInLeft" class="main__block-date">
                     12 <span style="display: initial;" class="main__block-border"></span> 08 <span style="display: initial;" class="main__block-border"></span> 2023
                 </p>
             </div>
@@ -140,9 +140,15 @@
                 </p>
             </div>
             <div class="dresscode__block-img">
-                <img data-scrolly-down="moveFromLeft, duration:1.5s" src="./img/girl.png" alt="Girl photo" class="dresscode__block-photo">
-                <img data-scrolly-down="moveFromBottom, duration:2s" src="./img/girl2.png" alt="Girl photo" class="dresscode__block-photo photo-margin">
-                <img data-scrolly-down="moveFromRight, duration:2.5s" src="./img/man.png" alt="Man photo" class="dresscode__block-photo">
+                <div data-scrolly-down="moveFromLeft, delay:0.2s" class="dresscode__block-img_photo photoOne">
+                    <img src="./img/girl.png" alt="Girl photo" class="dresscode__block-photo">
+                </div>
+                <div data-scrolly-down="moveFromRight, delay:0.5s" class="dresscode__block-img_photo photoTwo">
+                    <img src="./img/girl2.png" alt="Girl photo" class="dresscode__block-photo photo-margin">
+                </div>
+                <div data-scrolly-down="moveFromLeft, delay:0.7s" class="dresscode__block-img_photo photoThree">
+                    <img src="./img/man.png" alt="Man photo" class="dresscode__block-photo">
+                </div>
             </div>
         </div>
     </section>
@@ -173,11 +179,11 @@
                     </div>
                     <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>20:00</li>
-                        <p>Свадебный торт</p>
+                        <p class="minMargin">Свадебный торт</p>
                     </div>
                     <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>22:30</li>
-                        <p>Завершение мероприятия</p>
+                        <p class="minMargin">Завершение мероприятия</p>
                     </div>
                 </ul>
             </div>

@@ -20,7 +20,8 @@
 }
 
 .container {
-  width: 390px;
+  max-width: 420px;
+  padding: 0 15px;
   margin: 0 auto;
   border: 1px solid transparent;
   overflow: hidden;
@@ -58,7 +59,7 @@
 }
 .main__block-date {
   color: #f0f6fa;
-  font-size: 18px;
+  font-size: 19px;
 }
 .main__block-border {
   margin-right: 4px;
@@ -70,21 +71,21 @@
   flex-direction: column;
 }
 .main__block-descr_title {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   margin-top: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .main__block-descr_subdescr {
-  width: 240px;
+  width: 308px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 19px;
   text-align: center;
 }
 .main__block-month {
-  margin-top: 64px;
+  margin-top: 55px;
 }
 .main__block-month_wrapper {
   display: flex;
@@ -92,7 +93,7 @@
   flex-direction: column;
 }
 .main__block-month_name {
-  font-size: 27px;
+  font-size: 22px;
   line-height: 29px;
   color: #f0f6fa;
 }
@@ -232,11 +233,10 @@
 
 .info__block {
   color: #847070;
-  text-align: center;
 }
 .info__block-wrapper_title {
   margin-top: 54px;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
 }
 .info__block-wrapper_place {
@@ -247,15 +247,15 @@
   justify-content: center;
 }
 .info__block-wrapper_time {
-  font-size: 23px;
+  font-size: 20px;
   line-height: 19px;
-  margin-right: 24px;
+  margin-right: 18px;
 }
 .info__block-wrapper_subtime {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 10px;
-  width: 178px;
+  font-size: 13px;
+  width: 256px;
 }
 .info__block-btn {
   margin: 0 auto;
@@ -279,27 +279,34 @@
 }
 .dresscode__block-title {
   margin-top: 42px;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
 }
 .dresscode__block-descr {
   margin: 0 auto;
   margin-top: 15px;
-  width: 288px;
+  width: 333px;
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 100;
   line-height: 16px;
   text-align: center;
 }
 .dresscode__block-img {
-  padding: 0 36px;
+  margin-top: 35px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .dresscode__block .photo-margin {
-  margin-top: 56px;
+  margin-top: 81px;
+}
+.dresscode__block .photoTwo {
+  margin-left: -10px;
+}
+.dresscode__block .photoThree {
+  margin-top: -35px;
+  margin-left: -92px;
 }
 
 .plan__block {
@@ -310,12 +317,11 @@
   margin-top: 43px;
   font-size: 23px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .plan__block-wrapper {
   display: flex;
   justify-content: center;
-  margin-left: -35px;
 }
 .plan__block-list {
   display: flex;
@@ -336,8 +342,8 @@
 .plan__block-lists li {
   font-family: "Felidae", sans-serif;
   font-weight: 400;
-  margin-right: 28px;
-  font-size: 12px;
+  margin-right: 35px;
+  font-size: 22px;
   line-height: 19px;
 }
 .plan__block-lists li::before {
@@ -355,7 +361,10 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   line-height: 15px;
-  font-size: 12px;
+  font-size: 15px;
+}
+.plan__block-lists .minMargin {
+  margin-left: -4.5px;
 }
 
 .details__block {
@@ -368,30 +377,29 @@
 }
 .details__block-title {
   margin-top: 68px;
-  font-family: "Felidae", sans-serif;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: 300;
+  font-size: 22px;
 }
 .details__block-descr {
   margin: 0 auto;
   margin-top: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 13px;
-  width: 257px;
+  font-size: 15px;
+  width: 307px;
 }
 .details__block-number {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
 }
 .details__block-name {
   margin: 0 auto;
   margin-top: 2px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
 }
 .details__block-wrapp {
   width: 200px;
@@ -440,7 +448,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #847070;
-  margin-top: 19px;
+  margin-top: 15px;
   border: none;
   border-bottom: 1px solid #847070;
   padding: 8px 8px 8px 0;
@@ -495,4 +503,13 @@
   color: #847070;
   font-size: 14px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 405px) {
+  .plan__block-lists li {
+    font-size: 20px;
+  }
+  .plan__block-lists p {
+    font-size: 13px;
+  }
 }
