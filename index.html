@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cssanimation.css">
     <title>Андрей & София</title>
 </head>
 <body>
     <header>
         <div class="container noimg">
             <div class="header__block">
-                <div class="header__block-img">
+                <div style="z-index: 10;" class="header__block-img">
                     <img src="./img/label.png" alt="Label Photo">
                 </div>
             </div>
@@ -20,14 +21,14 @@
     <main class="main__block">
         <div class="container">
             <div class="main__block-name">
-                <h1 class="main__block-title">
+                <h1 data-scrolly-down="blurInTop" class="main__block-title">
                     Андрей & София
                 </h1>
-                <p class="main__block-date">
-                    12 <span class="main__block-border"></span> 08 <span class="main__block-border"></span> 2023
+                <p data-scrolly-down="blurInTop" class="main__block-date">
+                    12 <span style="display: initial;" class="main__block-border"></span> 08 <span style="display: initial;" class="main__block-border"></span> 2023
                 </p>
             </div>
-            <div class="main__block-clock">
+            <div data-scrolly-down="blurInTop" class="main__block-clock">
                 <p class="main__block-clock_title">до свадьбы осталось</p>
                 <div class="main__block-timer">
                     <div class="main__block-timer_item main__block-timer_days">
@@ -54,15 +55,15 @@
             <div class="arrow-down">
                 <span></span>
             </div>
-            <div class="main__block-descr">
-                <p class="main__block-descr_title">Дорогие наши друзья и родные!</p>
-                <p class="main__block-descr_subdescr">
+            <div data-scrolly-down="blurInTop" class="main__block-descr">
+                <p data-scrolly-down="blurInTop" class="main__block-descr_title">Дорогие наши друзья и родные!</p>
+                <p data-scrolly-down="blurInTop" class="main__block-descr_subdescr">
                     Приглашаем вас на торжество,
                     посвященное нашему бракосочетанию
                     которое состоится
                 </p>
             </div>
-            <div class="main__block-month">
+            <div data-scrolly-down="blurInTop" class="main__block-month">
                 <div class="main__block-month_wrapper">
                     <p class="main__block-month_name">Август</p>
                     <p class="main__block-month_date">2023</p>
@@ -117,63 +118,64 @@
     <section class="info__block">
         <div class="container">
             <div class="info__block-wrapper">
-                <p class="info__block-wrapper_title">Место проведения</p>
+                <p data-scrolly-down="blurInTop" class="info__block-wrapper_title">Место проведения</p>
                 <div class="info__block-wrapper_place">
-                    <p class="info__block-wrapper_time">15:00</p>
-                    <p class="info__block-wrapper_subtime">Церемония состоиться в Загсе “Чаша” по адресу: ул. Бондаренко, 34</p>
+                    <p data-scrolly-down="moveFromLeft" class="info__block-wrapper_time">15:00</p>
+                    <p data-scrolly-down="moveFromRight" class="info__block-wrapper_subtime">Церемония состоиться в Загсе “Чаша” по адресу: ул. Бондаренко, 34</p>
                 </div>
                 <div class="info__block-wrapper_place">
-                    <p class="info__block-wrapper_time">19:00</p>
-                    <p class="info__block-wrapper_subtime">Банкет пройдет в ресторане “Облака” по адресу: ул. Габдуллы Тукая, 91</p>
+                    <p data-scrolly-down="moveFromLeft" class="info__block-wrapper_time">19:00</p>
+                    <p data-scrolly-down="moveFromRight" class="info__block-wrapper_subtime">Банкет пройдет в ресторане “Облака” по адресу: ул. Габдуллы Тукая, 91</p>
                 </div>
             </div>
+            <button data-scrolly-down="flipY"  class="info__block-btn">Посмотреть карту<img src="./img/rightarrow.svg" alt="Right arrow"></button>
         </div>
     </section>
     <section class="dresscode__block">
         <div class="container">
             <div class="dresscrode__block-wrapper">
-                <p class="dresscode__block-title">Дресс код</p>
-                <p class="dresscode__block-descr">мы будем очень рады,если вы поддержите
+                <p data-scrolly-down="moveFromRight" class="dresscode__block-title">Дресс код</p>
+                <p data-scrolly-down="moveFromLeft" class="dresscode__block-descr">мы будем очень рады,если вы поддержите
                     палитру свадьбы в своих нарядях 
                 </p>
             </div>
             <div class="dresscode__block-img">
-                <img src="./img/girl.png" alt="Girl photo" class="dresscode__block-photo">
-                <img src="./img/girl2.png" alt="Girl photo" class="dresscode__block-photo photo-margin">
-                <img src="./img/man.png" alt="Man photo" class="dresscode__block-photo">
+                <img data-scrolly-down="moveFromLeft, duration:1.5s" src="./img/girl.png" alt="Girl photo" class="dresscode__block-photo">
+                <img data-scrolly-down="moveFromBottom, duration:2s" src="./img/girl2.png" alt="Girl photo" class="dresscode__block-photo photo-margin">
+                <img data-scrolly-down="moveFromRight, duration:2.5s" src="./img/man.png" alt="Man photo" class="dresscode__block-photo">
             </div>
         </div>
     </section>
-    <section class="plan__block">
+    <section class="plan__block" data-scrolly-top="flipY">
         <div class="container">
             <p class="plan__block-title">План мероприятия</p>
-            <div class="plan__block-wrapper">
+            <div data-scrolly-top="moveFromRight" class="plan__block-wrapper">
                 <ul class="plan__block-list">
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>12:00</li>
                         <p>Сбор гостей</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>15:00</li>
                         <p>Свадебная церемония</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>15:30</li>
                         <p>Фуршет</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>16:00</li>
                         <p>Фотосессия</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>17:00</li>
                         <p>Торжественный ужин</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>20:00</li>
                         <p>Свадебный торт</p>
                     </div>
-                    <div class="plan__block-lists">
+                    <div class="plan__block-lists" data-scrolly-down="blurInTop">
                         <li>22:30</li>
                         <p>Завершение мероприятия</p>
                     </div>
@@ -183,12 +185,57 @@
     </section>
     <section class="details__block">
         <div class="container">
-            <p class="details__block-title">Детали</p>
-            <p class="details__block-descr">На все Ваши вопросы с радостью ответит наш организатоор</p>
-            <p class="details__block-number">8(996)6062235</p>
-            <p class="details__block-name">Алена</p>
+            <p data-scrolly-down="blurInTop" class="details__block-title">Детали</p>
+            <p data-scrolly-down="blurInTop" class="details__block-descr">по любым вопросам до свадьбы и в день торжества смело обращайтесь к нашим организаторам</p>
+            <div data-scrolly-down="moveFromRight" class="details__block-wrapp">
+                <img src="./img/whatsapp.svg" alt="WhatsApp icon">
+                <div class="details__block-wrapp_contact">
+                    <p class="details__block-number">8(996)6062235</p>
+                    <p class="details__block-name">Алена</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="guests__block">
+        <div class="container">
+            <p data-scrolly-down="blurInTop" class="guests__block-title">Пожалуйста подтвердите
+                свое присутствие
+            </p>
+            <form data-scrolly-down="blurInTop" class="guests__block-form">
+                <label class="guests__block-label" for="name">Имя</label>
+                <input class="guests__block-input" type="text" placeholder="Введите здесь Ваше имя">
+                <label class="guests__block-label" for="name">Фамилия</label>
+                <input class="guests__block-input" type="text" placeholder="Введите здесь Вашу фамилию">
+                <p class="guests__block-check">Сможете ли Вы придти на нашу 
+                    свадьбу?
+                </p>
+                <div class="guests__block-form_wrapp">
+                    <div class="guests__block-checkIn">
+                        <input name="guestsCheck" class="guests__block-radioCheck" type="radio" value="yes">
+                        <label class="guests__block-radioBtn" for="">Обязательно буду</label>
+                    </div>
+                    <div class="guests__block-checkIn">
+                        <input name="guestsCheck" class="guests__block-radioCheck" type="radio" value="maybe">
+                        <label class="guests__block-radioBtn" for="">Пока не уверен(а)</label>
+                    </div>
+                    <div class="guests__block-checkIn">
+                        <input name="guestsCheck" class="guests__block-radioCheck" type="radio" value="no">
+                        <label class="guests__block-radioBtn" for="">Нет, не  смогу придти</label>
+                    </div>
+                </div>
+                <label class="guests__block-label" for="name">Уточните есть ли у вас пищевые 
+                    ограничения</label>
+                <input class="guests__block-input" type="text" placeholder="Веганы, вегитарианцы, аллергия на какой-либо продукт">
+                <button class="guests__block-btn">Отправить</button>
+            </form>
         </div>
     </section>
     <script src="./js/script.js"></script>
+    <script src="./js/scrolly.js"></script>
+    <script>
+        window.onload = function() {
+           scrolly();
+        }; 
+     </script>
 </body>
 </html>

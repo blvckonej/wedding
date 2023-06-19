@@ -201,6 +201,7 @@
   z-index: 1;
 }
 .main__block .love .imgLove {
+  width: 35px;
   z-index: -1;
   position: absolute;
   animation: imgLove 1s infinite ease-in-out;
@@ -231,6 +232,7 @@
 
 .info__block {
   color: #847070;
+  text-align: center;
 }
 .info__block-wrapper_title {
   margin-top: 54px;
@@ -254,6 +256,22 @@
   font-weight: 100;
   font-size: 10px;
   width: 178px;
+}
+.info__block-btn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #847070;
+  width: 200px;
+  height: 54px;
+  border: 1px solid #847070;
+  background-color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
 .dresscode__block {
@@ -286,12 +304,13 @@
 
 .plan__block {
   color: #847070;
-  padding: 0 36px;
+  padding: 10px 36px;
 }
 .plan__block-title {
   margin-top: 43px;
   font-size: 23px;
   text-align: center;
+  margin-bottom: 25px;
 }
 .plan__block-wrapper {
   display: flex;
@@ -302,11 +321,17 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  border-left: 1px solid #847070;
+  list-style-type: none;
+  position: relative;
 }
 .plan__block-lists {
   display: flex;
   align-items: center;
   margin-top: 25px;
+}
+.plan__block-lists:first-child {
+  margin-top: 0;
 }
 .plan__block-lists li {
   font-family: "Felidae", sans-serif;
@@ -314,6 +339,17 @@
   margin-right: 28px;
   font-size: 12px;
   line-height: 19px;
+}
+.plan__block-lists li::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #847070;
+  margin-right: 12px;
+  margin-left: -4px;
 }
 .plan__block-lists p {
   font-family: "Montserrat", sans-serif;
@@ -328,7 +364,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .details__block-title {
   margin-top: 68px;
@@ -346,7 +382,6 @@
 }
 .details__block-number {
   margin: 0 auto;
-  margin-top: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -357,4 +392,107 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 13px;
+}
+.details__block-wrapp {
+  width: 200px;
+  height: 54px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #847070;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.details__block-wrapp img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.guests__block {
+  margin: 0 auto;
+}
+.guests__block-title {
+  width: 298px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 24px;
+  color: #847070;
+}
+.guests__block-form {
+  display: flex;
+  flex-direction: column;
+}
+.guests__block-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #847070;
+  margin-top: 19px;
+}
+.guests__block-input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #847070;
+  margin-top: 19px;
+  border: none;
+  border-bottom: 1px solid #847070;
+  padding: 8px 8px 8px 0;
+  outline: none;
+}
+.guests__block-input::-moz-placeholder {
+  opacity: 0.4;
+}
+.guests__block-input::placeholder {
+  opacity: 0.4;
+}
+.guests__block-check {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #847070;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+.guests__block-form_wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.guests__block-checkIn {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guests__block-radioBtn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #847070;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.5;
+  margin-left: 8px;
+}
+.guests__block-btn {
+  width: 200px;
+  height: 54px;
+  border: 1px solid #847070;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #847070;
+  font-size: 14px;
+  cursor: pointer;
 }
