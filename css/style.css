@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +14,10 @@
 @font-face {
   font-family: "Felidae";
   src: url("../fonts/felidae.ttf");
+}
+@font-face {
+  font-family: "Alana Pro Rus";
+  src: url("../fonts/alanaprorus.otf");
 }
 :root {
   --dataSize: 60px;
@@ -54,6 +58,7 @@
 .main__block-title {
   color: #f0f6fa;
   font-size: 35px;
+  font-weight: 400;
   line-height: 37px;
   margin-bottom: 10px;
 }
@@ -78,8 +83,8 @@
 }
 .main__block-descr_subdescr {
   width: 308px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 19px;
   text-align: center;
@@ -124,7 +129,7 @@
   color: #f0f6fa;
 }
 .main__block-clock p {
-  margin-top: 49px;
+  margin-top: 72px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -163,7 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 19px;
+  margin-top: 61px;
 }
 .main__block .arrow-down span {
   display: block;
@@ -252,10 +257,10 @@
   margin-right: 18px;
 }
 .info__block-wrapper_subtime {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 13px;
-  width: 256px;
+  width: 259px;
 }
 .info__block-btn {
   margin: 0 auto;
@@ -286,9 +291,9 @@
   margin: 0 auto;
   margin-top: 15px;
   width: 333px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 16px;
   text-align: center;
 }
@@ -320,51 +325,44 @@
   margin-bottom: 30px;
 }
 .plan__block-wrapper {
-  display: flex;
-  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
 }
 .plan__block-list {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  border-left: 1px solid #847070;
+  align-self: center;
   list-style-type: none;
   position: relative;
 }
 .plan__block-lists {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
-}
-.plan__block-lists:first-child {
-  margin-top: 0;
 }
 .plan__block-lists li {
-  font-family: "Felidae", sans-serif;
+  font-family: "Alana Pro Rus", sans-serif;
   font-weight: 400;
-  margin-right: 35px;
   font-size: 22px;
   line-height: 19px;
 }
-.plan__block-lists li::before {
-  content: "";
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  vertical-align: middle;
-  border-radius: 50%;
-  background-color: #847070;
-  margin-right: 12px;
-  margin-left: -4px;
-}
 .plan__block-lists p {
+  width: 120px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 15px;
   font-size: 15px;
 }
-.plan__block-lists .minMargin {
-  margin-left: -4.5px;
+.plan__block-lists_border {
+  margin: 0 auto;
+  margin-left: 110px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 45px;
+  border-left: 1px solid #847070;
+}
+.plan__block .long {
+  height: 81px;
 }
 
 .details__block {
@@ -384,7 +382,7 @@
   margin: 0 auto;
   margin-top: 15px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   width: 307px;
 }
@@ -436,7 +434,7 @@
 }
 .guests__block-label {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   color: #847070;
@@ -444,7 +442,7 @@
 }
 .guests__block-input {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   color: #847070;
@@ -462,7 +460,7 @@
 }
 .guests__block-check {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #847070;
   font-size: 15px;
   line-height: 18px;
@@ -483,7 +481,7 @@
 }
 .guests__block-radioBtn {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #847070;
   font-size: 14px;
   line-height: 18px;

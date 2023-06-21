@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         daysText.textContent = declOfNum(days, ['день', 'дней', 'дня']);
         hourseText.textContent = declOfNum(hourse, ['час', 'часа', 'часов']);
         minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
-        secondsText.textContent = declOfNum(seconds, ['секунд', 'секунда', 'секунды']);
+        secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
     };
     timeCount();
     setInterval(timeCount, 1000);
