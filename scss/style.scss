@@ -35,14 +35,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 .container {
   max-width: 420px;
-  padding: 0 15px;
   margin: 0 auto;
   border: 1px solid transparent;
-  overflow: hidden;
+  padding: 0 15px;
   background: url("../img/background.png");
   background-size: 80%;
 }
@@ -51,25 +52,33 @@ body {
   background-image: none;
 }
 
+.main__block-fullscreen {
+  background: url("../img/background.png");
+  background-size: 80%;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .header__block {
   &-img {
     text-align: center;
-    margin-top: 64px;
   }
 }
 .fullscreen__block {
+  text-align: center;
   margin-top: -85px;
-  z-index: -1;
+  min-height: 100%;
+  min-width: 420px;
   color: #f0f6fa;
-  .container {
-    background-color: #847070;
-    min-height: 100vh;
-  }
+  background-color: #847070;
   .arrow-down {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 61px;
   }
   .arrow-down span {
     display: block;
@@ -78,7 +87,6 @@ body {
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
     transform: rotate(45deg);
-    margin: 10px;
     animation: arrow-down 2s infinite;
   }
   .arrow-down span:nth-child(2) {
@@ -101,8 +109,11 @@ body {
     }
   }
 }
+
 .main__block {
   color: #ffffff;
+  margin-top: -1px;
+  width: 420px;
   .container {
     background-color: #847070;
   }
@@ -110,7 +121,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 109px;
+    h1 {
+      margin-top: 109px;
+    }
   }
   &-title {
     color: #f0f6fa;
@@ -222,41 +235,6 @@ body {
     font-size: 13px;
     font-weight: 300;
     text-align: center;
-  }
-  .arrow-down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 61px;
-  }
-  .arrow-down span {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    transform: rotate(45deg);
-    margin: 10px;
-    animation: arrow-down 2s infinite;
-  }
-  .arrow-down span:nth-child(2) {
-    animation-delay: -0.2s;
-  }
-  .arrow-down span:nth-child(3) {
-    animation-delay: -0.4s;
-  }
-  @keyframes arrow-down {
-    0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: rotate(45deg) translate(20px, 20px);
-    }
   }
   .week {
     font-weight: 600;
